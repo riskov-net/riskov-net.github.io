@@ -8,7 +8,7 @@
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="css/bootstrap.min.css">
 
-        <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="css/styles.css?v2">
 
         <title>Автоматизированная система управления рисками</title>
     </head>
@@ -16,7 +16,8 @@
         <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
-                    <a class="nav-item nav-link active" href="#page2">Что вам нужно</a>
+                    <a class="nav-item nav-link active" href="#page0">Главная</a>
+                    <a class="nav-item nav-link" href="#page2">Что вам нужно</a>
                     <a class="nav-item nav-link" href="#page3">Откуда информация</a>
                     <a class="nav-item nav-link" href="#page6">Состав системы</a>
                     <a class="nav-item nav-link" href="#page8">Что получите</a>
@@ -50,12 +51,40 @@
                         <li>Риски и прогнозы к ним считаются в автомате.</li>
                         <li>Ожидаемый остаточный риск (до начала исправления) считается в автомате.</li>
                         <li>Просчитывается наиболее вероятный сценарий события, а также сценарий с наибольшей величиной риска возможных последствий.</li>
-                        <li>Постоянно обновляемый рейтинг сотрудников по продуктивности (производительности труда) и вовлеченности (лояльности).</li>
-                        <li>Необходимый для внезапных оптимизаций, сокращений, кадровых решений.</li>
+                        <li>Постоянно обновляемый рейтинг сотрудников по продуктивности (производительности труда) и вовлеченности (лояльности), необходимый для внезапных оптимизаций, сокращений, кадровых решений.</li>
                         <li>Осуществляет мониторинг всех процессов и процедур.</li>
                     </ul>
                 </div>
                 <a href="mailto:netriskov@gmail.com" class="btn btn-secondary btn-lg active" role="button">Оставить заявку</a>
+            </div>
+        </div>
+        <div id="video">
+            <div class="container">
+                <div class="row justify-content-md-center">
+                    <div class="col col-lg-2"></div>
+                    <div class="col-md-auto">
+                        <h1>Что получит</h1>
+                        <nav>
+                            <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                                <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Собственник</a>
+                                <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Директор</a>
+                                <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">Пользователь</a>
+                            </div>
+                        </nav>
+                        <div class="tab-content" id="nav-tabContent">
+                            <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/FZh1QOrices" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                            </div>
+                            <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/lCFhUFX5UYY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                            </div>
+                            <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/IADSthqvfZQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col col-lg-2"></div>
+                </div>
             </div>
         </div>
         <div id="page1">
@@ -89,8 +118,8 @@
                 <div class="row justify-content-md-center">
                     <div class="col col-lg-2"></div>
                     <div class="col-md-auto">
-                        <h2>Что вам нужно?</h2>
                         <div class="page-content">
+                            <h3>Что вам нужно?</h3>
                             <p>Прогнозы и каждодневные риски:</p>
                             <ul>
                                 <li>по предприятию (организации)</li>
@@ -115,8 +144,8 @@
                 <div class="row justify-content-md-center">
                     <div class="col col-lg-2"></div>
                     <div class="col-md-auto">
-                        <h2>Откуда информация?</h2>
                         <div class="page-content">
+                            <h3>Откуда информация?</h3>
                             <p>
                                 Почему взрываются шахты, падают смолёты, разрушаются турбины ГЭС и т.д.? Ведь данные системы
                                 зарегулированы циркулярами и имеют тройную степень защиты!!! Но все эти защиты - "пустой звук",
@@ -136,7 +165,6 @@
                 <div class="row justify-content-md-center">
                     <div class="col col-lg-2"></div>
                     <div class="col-md-auto">
-                        <h2>&nbsp;</h2>
                         <div class="page-content">
                             <p>А потом система сама поможет отладить систему поступления объективной информации...</p>
                             <img src="img/dashboard.jpg" alt="Dashboard"/>
@@ -204,9 +232,8 @@
                 <div class="row justify-content-md-center">
                     <div class="col col-lg-2"></div>
                     <div class="col-md-auto">
-                        <h2>&nbsp;</h2>
                         <div class="page-content">
-                            <p><strong>Собственник получит через год:</strong></p>
+                            <h3>Собственник получит через год:</h3>
                             <ul>
                                 <li>рост производительности труда в 1.5 раза</li>
                                 <li>уменьшение и стабильность текучки кадров в 2 раза</li>
@@ -219,12 +246,6 @@
                     </div>
                     <div class="col col-lg-2"></div>
                 </div>
-                <!--<div class="row">
-                    <div class="col col-lg-6"></div>
-                    <div class="col col-lg-6">
-                        <a href="mailto:netriskov@gmail.com">netriskov@gmail.com</a>
-                    </div>
-                </div>-->
             </div>
         </div>
         <div id="page7">
@@ -232,15 +253,12 @@
                 <div class="row justify-content-md-center">
                     <div class="col col-lg-2"></div>
                     <div class="col-md-auto">
-                        <h2>&nbsp;</h2>
                         <div class="page-content">
                             <p>Получите новый коллектив, радеющий за имущество и бизнес собственника.</p>
-                            <p>&nbsp;</p>
                             <p>
                                 Сотрудники начнут думать над улучшениями. У любого руководителя появится буфер по времени до наступления
                                 знаковых событий за счет прогнозирования причинно-следственных связей.
                             </p>
-                            <p>&nbsp;</p>
                             <p>Служба Персонала сможет оперативно устранять системные ошибки и менять кадровую политику.</p>
                             <p>&nbsp;</p>
                         </div>
@@ -249,5 +267,8 @@
                 </div>
             </div>
         </div>
+
+        <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
     </body>
 </html>
