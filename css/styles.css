@@ -5,10 +5,6 @@
     color: black;
 }
 
-a, a:hover, a:visited {
-    color: black;
-}
-
 h1, h2 {
     text-transform: uppercase;
     margin: 0 0 1em;
@@ -36,6 +32,31 @@ ul li {
 .nav-link {
     display: block;
     padding: 0rem 1rem;
+}
+
+.sidebar {
+    position: fixed;
+    z-index: 3000;
+}
+
+.sidebar.left {
+    left: 0;
+    bottom: 150px;
+}
+
+.sidebar.right {
+    right: 0;
+    bottom: 100px;
+}
+
+.sidebar a {
+    display: block;
+    margin: 10px 0;
+}
+
+.sidebar .btn {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
 }
 
 .banner {
@@ -145,11 +166,6 @@ ul {
     padding-top: 2em;
     min-height: 1350px;
     background-color: #DEDEDC;
-}
-
-#video {
-    position: relative;
-    background-color: #E5E5E5;
 }
 
 #page1 {
