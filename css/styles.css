@@ -6,12 +6,16 @@
 }
 
 h1, h2 {
-    text-transform: uppercase;
     margin: 0 0 1em;
     text-align: center;
 }
 
 h2 {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+h3 {
     font-size: 1em;
     font-weight: bold;
 }
@@ -57,6 +61,7 @@ ul li {
 .sidebar .btn {
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
+    padding: .375rem .45rem;
 }
 
 .play-icon {
@@ -125,7 +130,7 @@ ul li {
 .main-text {
     display: block;
     text-align: left;
-    margin: 230px 50px 0;
+    margin: 210px 50px 0;
     line-height: 1.2;
 }
 
@@ -171,15 +176,15 @@ ul {
     text-align: center;
 }
 
-#page0 {
+#page1 {
     position: relative;
     padding-top: 2em;
-    min-height: 1350px;
+    min-height: 1400px;
     background-color: #DEDEDC;
 }
 
-#page1 {
-    background-color: #D7FDD0;
+#page1 h2 {
+    margin: 1.5em 0;
 }
 
 #page2 {
@@ -220,4 +225,8 @@ ul {
 
 #contacts a, #contacts a:hover, #contacts a:visited {
     color: #000000;
+}
+
+#contacts a.btn, #contacts a.btn:hover, #contacts a.btn:visited {
+    color: #FFFFFF;
 }
