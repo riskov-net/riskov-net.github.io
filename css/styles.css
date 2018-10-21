@@ -59,6 +59,16 @@ ul li {
     border-bottom-left-radius: 0;
 }
 
+.play-icon {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    background: url() 0 0 no-repeat;
+    background-image: url(../img/play.svg), none; /* Modern browsers */
+    background-size: auto 100%;
+    vertical-align: middle;
+}
+
 .banner {
     background-image: url(../img/bg.jpg);
     background-repeat: no-repeat;
@@ -198,4 +208,16 @@ ul {
 
 #page8 {
     background-color: #F19FF9;
+}
+
+#contacts {
+    padding: 20px 30px;
+}
+
+#contacts p {
+    margin-bottom: 0;
+}
+
+#contacts a, #contacts a:hover, #contacts a:visited {
+    color: #000000;
 }
