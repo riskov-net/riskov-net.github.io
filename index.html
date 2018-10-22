@@ -8,12 +8,13 @@
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="css/bootstrap.min.css">
 
-        <link rel="stylesheet" href="css/styles.css?v8">
+        <link rel="stylesheet" href="css/styles.css?v9">
 
         <title>Автоматизированная система управления рисками</title>
     </head>
     <body>
         <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light justify-content-between">
+            <a class="btn btn-sm btn-outline-secondary active" href="mailto:netriskov@gmail.com" role="button" id="first-nav-button">Оставить заявку</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -27,7 +28,7 @@
                     <!--<a class="nav-item nav-link active" href="#contacts">Контакты</a>-->
                 </div>
             </div>
-            <a class="btn btn-sm btn-outline-secondary active" href="mailto:netriskov@gmail.com" role="button">Оставить заявку</a>
+            <a class="btn btn-sm btn-outline-secondary active" href="mailto:netriskov@gmail.com" role="button" id="second-nav-button">Оставить заявку</a>
         </nav>
         <div class="sidebar left">
             <a class="btn btn-danger" target="_blank" href="https://youtu.be/FZh1QOrices">Собственнику <span class="play-icon"></span></a>
@@ -85,167 +86,125 @@
             </div>
         </div>
         <div id="page2">
-            <div class="container">
-                <div class="row justify-content-md-center">
-                    <div class="col col-lg-2"></div>
-                    <div class="col-md-auto">
-                        <div class="page-content">
-                            <h3>Что вам нужно?</h3>
-                            <p>Прогнозы и каждодневные риски:</p>
-                            <ul>
-                                <li>по предприятию (организации)</li>
-                                <li>по службе, отделу, подразделению</li>
-                                <li>руководителю, событию, отклонению</li>
-                            </ul>
-                            <img src="img/risks_dashboard.jpg" alt="Risks dashboard"/>
-                            <p><strong>Способность</strong> руководителей устранять/ <br> уменьшать риск:</p>
-                            <ul>
-                                <li>результативность</li>
-                                <li>эффективность</li>
-                                <li>вовлеченность каждого руководителя</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col col-lg-2"></div>
+            <div class="main-content">
+                <div class="main-text">
+                    <h3>Что вам нужно?</h3>
+                    <p>Прогнозы и каждодневные риски:</p>
+                    <ul>
+                        <li>по предприятию (организации)</li>
+                        <li>по службе, отделу, подразделению</li>
+                        <li>руководителю, событию, отклонению</li>
+                    </ul>
+                    <img src="img/risks_dashboard.jpg" alt="Risks dashboard"/>
+                    <p><strong>Способность</strong> руководителей устранять/ <br> уменьшать риск:</p>
+                    <ul>
+                        <li>результативность</li>
+                        <li>эффективность</li>
+                        <li>вовлеченность каждого руководителя</li>
+                    </ul>
                 </div>
             </div>
         </div>
         <div id="page3">
-            <div class="container">
-                <div class="row justify-content-md-center">
-                    <div class="col col-lg-2"></div>
-                    <div class="col-md-auto">
-                        <div class="page-content">
-                            <h3>Откуда информация?</h3>
-                            <p>
-                                Почему взрываются шахты, падают смолёты, разрушаются турбины ГЭС и т.д.? Ведь данные системы
-                                зарегулированы циркулярами и имеют тройную степень защиты!!! Но все эти защиты - "пустой звук",
-                                если человека затачивают игнорировать отклонения и опасности. Ради работы, ради карьеры, ради
-                                заработка... И этот человек отключает или игнорирует эти системы. Мы вынем все эти отклонения и
-                                посчитаем <strong>реальные</strong> риски!!! С <strong>реальными</strong> прогнозами.
-                            </p>
-                            <img src="img/graph_risks.jpg" alt="Graph risks"/>
-                        </div>
-                    </div>
-                    <div class="col col-lg-2"></div>
+            <div class="main-content">
+                <div class="main-text">
+                    <h3>Откуда информация?</h3>
+                    <p>
+                        Почему взрываются шахты, падают смолёты, разрушаются турбины ГЭС и т.д.? Ведь данные системы
+                        зарегулированы циркулярами и имеют тройную степень защиты!!! Но все эти защиты - "пустой звук",
+                        если человека затачивают игнорировать отклонения и опасности. Ради работы, ради карьеры, ради
+                        заработка... И этот человек отключает или игнорирует эти системы. Мы вынем все эти отклонения и
+                        посчитаем <strong>реальные</strong> риски!!! С <strong>реальными</strong> прогнозами.
+                    </p>
+                    <img src="img/graph_risks.jpg" alt="Graph risks"/>
                 </div>
             </div>
         </div>
         <div id="page4">
-            <div class="container">
-                <div class="row justify-content-md-center">
-                    <div class="col col-lg-2"></div>
-                    <div class="col-md-auto">
-                        <div class="page-content">
-                            <p>А потом система сама поможет отладить систему поступления объективной информации...</p>
-                            <img src="img/dashboard.jpg" alt="Dashboard"/>
-                            <p>
-                                В 10 000 - 20 000 раз увеличим поток добровольных сообщений. Возродим систему сообщений о собственной ошибке
-                                (о которой вряд ли кто-то бы узнал из официальных источников).
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col col-lg-2"></div>
+            <div class="main-content">
+                <div class="main-text">
+                    <p>А потом система сама поможет отладить систему поступления объективной информации...</p>
+                    <img src="img/dashboard.jpg" alt="Dashboard"/>
+                    <p>
+                        В 10 000 - 20 000 раз увеличим поток добровольных сообщений. Возродим систему сообщений о собственной ошибке
+                        (о которой вряд ли кто-то бы узнал из официальных источников).
+                    </p>
                 </div>
             </div>
         </div>
         <div id="page5">
-            <div class="container">
-                <div class="row justify-content-md-center">
-                    <div class="col col-lg-2"></div>
-                    <div class="col-md-auto">
-                        <div class="page-content">
-                            <h3>Всё это и будет основным "топливом" для работы АСУР.</h3>
-                            <p>
-                                В отличие от аудитов, вы получите информацию о нескольких тысячах отклонений за полгода на каждые 300 сотрудников
-                                и сможете оперативно изменить действующие инструкции. Наличие такой системы обязательно для всех организаций
-                                за рубежом. Именно она делает их продукт в разы лучше нашего!
-                            </p>
-                            <p class="center">Внедрить эту систему самим (без нас) <br> - НЕ ПОЛУЧИТСЯ!!!</p>
-                            <p>
-                                Административная система вашей организации задавит вас на "взлёте". "Серых" кардиналов и руководителей, не желающих
-                                перемен, никто не отменял. Ущерб, наносимый каждым из них, ляжет на стол собственника с величиной риска для предприятия.
-                            </p>
-                            <p class="center">
-                                Мы избавим вас от этого балласта и оставим работающий инструмент управления рисками.
-                            </p>
-                            <p class="center">У нас есть опыт.</p>
-                        </div>
-                    </div>
-                    <div class="col col-lg-2"></div>
+            <div class="main-content">
+                <div class="main-text">
+                    <h3>Всё это и будет основным "топливом" для работы АСУР.</h3>
+                    <p>
+                        В отличие от аудитов, вы получите информацию о нескольких тысячах отклонений за полгода на каждые 300 сотрудников
+                        и сможете оперативно изменить действующие инструкции. Наличие такой системы обязательно для всех организаций
+                        за рубежом. Именно она делает их продукт в разы лучше нашего!
+                    </p>
+                    <p class="center">Внедрить эту систему самим (без нас) <br> - НЕ ПОЛУЧИТСЯ!!!</p>
+                    <p>
+                        Административная система вашей организации задавит вас на "взлёте". "Серых" кардиналов и руководителей, не желающих
+                        перемен, никто не отменял. Ущерб, наносимый каждым из них, ляжет на стол собственника с величиной риска для предприятия.
+                    </p>
+                    <p class="center">
+                        Мы избавим вас от этого балласта и оставим работающий инструмент управления рисками.
+                    </p>
+                    <p class="center">У нас есть опыт.</p>
                 </div>
             </div>
         </div>
         <div id="page6">
-            <div class="container">
-                <div class="row justify-content-md-center">
-                    <div class="col col-lg-2"></div>
-                    <div class="col-md-auto">
-                        <div class="page-content">
-                            <h3>Составные части системы <br> управления рисками</h3>
-                            <ul>
-                                <li>Система сообщений</li>
-                                <li>Система мероприятий</li>
-                                <li>Скоринг</li>
-                            </ul>
-                            <img src="img/hem.jpg" alt="Human, environment, machine"/>
-                            <ul>
-                                <li>Программное обеспечение, выполняющее расчёт прогнозов, эффективности</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col col-lg-2"></div>
+            <div class="main-content">
+                <div class="main-text">
+                    <h3>Составные части системы <br> управления рисками</h3>
+                    <ul>
+                        <li>Система сообщений</li>
+                        <li>Система мероприятий</li>
+                        <li>Скоринг</li>
+                    </ul>
+                    <img src="img/hem.jpg" alt="Human, environment, machine"/>
+                    <ul>
+                        <li>Программное обеспечение, выполняющее расчёт прогнозов, эффективности</li>
+                    </ul>
                 </div>
             </div>
         </div>
         <div id="page8">
-            <div class="container">
-                <div class="row justify-content-md-center">
-                    <div class="col col-lg-2"></div>
-                    <div class="col-md-auto">
-                        <div class="page-content">
-                            <h3>Собственник получит через год:</h3>
-                            <ul>
-                                <li>рост производительности труда в 1.5 раза</li>
-                                <li>уменьшение и стабильность текучки кадров в 2 раза</li>
-                                <li>первенство среди конкурентов</li>
-                                <li>ежегодное уменьшение рисков на 5% (без доп. ресурсов)</li>
-                                <li>прозрачность состояния дел на любом структурном уровне</li>
-                                <li>обозначены проблемные места и люди, а также варианты уменьшения рисков с заранее посчитанной (ожидаемой) эффективностью</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col col-lg-2"></div>
+            <div class="main-content">
+                <div class="main-text">
+                    <h3>Собственник получит через год:</h3>
+                    <ul>
+                        <li>рост производительности труда в 1.5 раза</li>
+                        <li>уменьшение и стабильность текучки кадров в 2 раза</li>
+                        <li>первенство среди конкурентов</li>
+                        <li>ежегодное уменьшение рисков на 5% (без доп. ресурсов)</li>
+                        <li>прозрачность состояния дел на любом структурном уровне</li>
+                        <li>обозначены проблемные места и люди, а также варианты уменьшения рисков с заранее посчитанной (ожидаемой) эффективностью</li>
+                    </ul>
                 </div>
             </div>
         </div>
         <div id="page7">
-            <div class="container">
-                <div class="row justify-content-md-center">
-                    <div class="col col-lg-2"></div>
-                    <div class="col-md-auto">
-                        <div class="page-content">
-                            <p>Получите новый коллектив, радеющий за имущество и бизнес собственника.</p>
-                            <p>
-                                Сотрудники начнут думать над улучшениями. У любого руководителя появится буфер по времени до наступления
-                                знаковых событий за счет прогнозирования причинно-следственных связей.
-                            </p>
-                            <p>Служба Персонала сможет оперативно устранять системные ошибки и менять кадровую политику.</p>
-                            <p>&nbsp;</p>
-                        </div>
-                    </div>
-                    <div class="col col-lg-2"></div>
+            <div class="main-content">
+                <div class="main-text">
+                    <p>Получите новый коллектив, радеющий за имущество и бизнес собственника.</p>
+                    <p>
+                        Сотрудники начнут думать над улучшениями. У любого руководителя появится буфер по времени до наступления
+                        знаковых событий за счет прогнозирования причинно-следственных связей.
+                    </p>
+                    <p>Служба Персонала сможет оперативно устранять системные ошибки и менять кадровую политику.</p>
+                    <p>&nbsp;</p>
                 </div>
             </div>
         </div>
         <footer class="bg-light">
             <div id="contacts" class="container">
                 <div class="row justify-content-between">
-                    <div class="col-4">©&nbsp;2018 <a href="http://riskovnet.com">riskovnet.com</a></div>
-                    <div class="col-4">
+                    <div class="col-lg-4">©&nbsp;2018 <a href="http://riskovnet.com">riskovnet.com</a></div>
+                    <div class="col-lg-4">
                         <a class="btn btn-secondary btn-lg active" href="mailto:netriskov@gmail.com" role="button">Оставить заявку</a>
                     </div>
-                    <div class="col-4">
+                    <div class="col-lg-4">
                         <p>e-mail: <a href="mailto:netriskov@gmail.com">netriskov@gmail.com</a></p>
                         <p>тел.: 8-906-145-59-18</p>
                     </div>

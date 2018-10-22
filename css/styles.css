@@ -18,6 +18,7 @@ h2 {
 h3 {
     font-size: 1em;
     font-weight: bold;
+    margin-top: 1.5em;
 }
 
 p {
@@ -33,9 +34,18 @@ ul li {
     margin-bottom: 0.5em;
 }
 
+#first-nav-button {
+    display: inline-block;
+}
+
+#second-nav-button {
+    display: none;
+}
+
 .nav-link {
     display: block;
     padding: 0rem 1rem;
+    margin: 0 auto;
 }
 
 .sidebar {
@@ -44,13 +54,14 @@ ul li {
 }
 
 .sidebar.left {
-    left: 0;
-    bottom: 50px;
+    left: -150px;
+    bottom: 30px;
 }
 
 .sidebar.right {
     right: 0;
-    bottom: 20px;
+    bottom: 30px;
+    display: none;
 }
 
 .sidebar a {
@@ -63,7 +74,8 @@ ul li {
     border-bottom-left-radius: 0;
     padding: .375rem 1.375rem .375rem .45rem;
     position: relative;
-    right: 90%;
+    width: 180px;
+    white-space: normal;
 }
 
 .play-icon {
@@ -76,7 +88,7 @@ ul li {
     vertical-align: middle;
     position: absolute;
     right: 3px;
-    top: 13px;
+    top: 32%;
 }
 
 .banner {
@@ -118,7 +130,6 @@ ul li {
 }
 
 .main-content {
-    background-color: rgba(255, 255, 255, 0.7);
     position: relative;
     left: 0;
     width: 100%;
@@ -130,8 +141,8 @@ ul li {
 .banner-logo {
     display: inline-block;
     margin: 200px 0 20px;
-    width: 360px;
-    height: 82px;
+    width: 240px;
+    height: 55px;
     position: relative;
     z-index: 5;
 }
@@ -144,11 +155,11 @@ ul li {
 }
 
 .main-text h4 {
-    font-size: 1em;
+    font-size: 1.1em;
 }
 
 .main-text ul li {
-    font-size: 0.8em;
+    font-size: 0.9em;
 }
 
 .center {
@@ -159,13 +170,7 @@ ul li {
     padding: 60px 50px 20px;
 }
 
-.page-content {
-    margin: 0 auto;
-    text-align: left;
-    max-width: 32em;
-}
-
-.page-content p {
+.main-content p {
     margin-bottom: 10px;
 }
 
@@ -173,13 +178,13 @@ ul {
     margin-bottom: 1em;
 }
 
-.page-content img {
+.main-content img {
     max-width: 90%;
     display: block;
     margin: 5px auto;
 }
 
-.page-content h3 {
+.main-content h3 {
     font-size: 30px;
     font-weight: bold;
     text-align: center;
@@ -194,6 +199,10 @@ ul {
 
 #page1 h2 {
     margin: 1.5em 0;
+}
+
+#page1 .main-content {
+    background-color: rgba(255, 255, 255, 0.7);
 }
 
 #page2 {
@@ -241,15 +250,22 @@ ul {
     display: none;
 }
 
-@media (min-width: 576px) {
-    .banner-inner-content {
-        left: 10%;
-        width: 80%;
+#contacts, #contacts p {
+    text-align: right;
+}
+
+@media (min-width: 568px) {
+    .sidebar.left {
+        left: 0;
     }
 
-    .main-content  {
-        left: 10%;
-        width: 80%;
+    .main-content {
+        padding-left: 150px;
+    }
+
+    .banner-logo {
+        width: 360px;
+        height: 82px;
     }
 }
 
@@ -262,12 +278,38 @@ ul {
     .main-content  {
         left: 20%;
         width: 60%;
+        padding-left: 0;
+    }
+
+    .sidebar.left {
+        bottom: 50px;
+    }
+
+    .sidebar.right {
+        display: block;
+    }
+
+    #contacts, #contacts p {
+        text-align: center;
     }
 }
 
 @media (min-width: 992px) {
+    .nav-link {
+        margin: 0;
+    }
+
+    .sidebar.left {
+        bottom: 80px;
+    }
+
+    .sidebar.right {
+        bottom: 70px;
+    }
+
     .sidebar .btn {
-        right: 0;
+        width: auto;
+        white-space: nowrap;
     }
 
     .banner-man {
@@ -275,6 +317,14 @@ ul {
     }
 
     #contacts a.btn {
+        display: inline-block;
+    }
+
+    #first-nav-button {
+        display: none;
+    }
+
+    #second-nav-button {
         display: inline-block;
     }
 }
