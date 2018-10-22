@@ -45,12 +45,12 @@ ul li {
 
 .sidebar.left {
     left: 0;
-    bottom: 150px;
+    bottom: 50px;
 }
 
 .sidebar.right {
     right: 0;
-    bottom: 100px;
+    bottom: 20px;
 }
 
 .sidebar a {
@@ -61,7 +61,9 @@ ul li {
 .sidebar .btn {
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
-    padding: .375rem .45rem;
+    padding: .375rem 1.375rem .375rem .45rem;
+    position: relative;
+    right: 90%;
 }
 
 .play-icon {
@@ -72,6 +74,9 @@ ul li {
     background-image: url(../img/play.svg), none; /* Modern browsers */
     background-size: auto 100%;
     vertical-align: middle;
+    position: absolute;
+    right: 3px;
+    top: 13px;
 }
 
 .banner {
@@ -93,14 +98,15 @@ ul li {
     width: 431px;
     height: 494px;
     z-index: 3;
+    display: none;
 }
 
 .banner-inner-content {
     background-color: rgba(255, 255, 255, 0.7);
     position: absolute;
     top: 0;
-    left: 20%;
-    width: 60%;
+    left: 0;
+    width: 100%;
     height: 540px;
     text-align: center;
     line-height: 0.8;
@@ -114,8 +120,8 @@ ul li {
 .main-content {
     background-color: rgba(255, 255, 255, 0.7);
     position: relative;
-    left: 20%;
-    width: 60%;
+    left: 0;
+    width: 100%;
     height: 100%;
     text-align: center;
     line-height: 0.8;
@@ -182,7 +188,7 @@ ul {
 #page1 {
     position: relative;
     padding-top: 2em;
-    min-height: 1400px;
+    height: auto;
     background-color: #DEDEDC;
 }
 
@@ -232,4 +238,46 @@ ul {
 
 #contacts a.btn, #contacts a.btn:hover, #contacts a.btn:visited {
     color: #FFFFFF;
+    display: none;
+}
+
+@media (min-width: 576px) {
+    .banner-inner-content {
+        left: 10%;
+        width: 80%;
+    }
+
+    .main-content  {
+        left: 10%;
+        width: 80%;
+    }
+}
+
+@media (min-width: 768px) {
+    .banner-inner-content {
+        left: 20%;
+        width: 60%;
+    }
+
+    .main-content  {
+        left: 20%;
+        width: 60%;
+    }
+}
+
+@media (min-width: 992px) {
+    .sidebar .btn {
+        right: 0;
+    }
+
+    .banner-man {
+        display: block;
+    }
+
+    #contacts a.btn {
+        display: inline-block;
+    }
+}
+
+@media (min-width: 1200px) {
 }

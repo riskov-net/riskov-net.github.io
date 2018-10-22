@@ -8,19 +8,24 @@
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="css/bootstrap.min.css">
 
-        <link rel="stylesheet" href="css/styles.css?v6">
+        <link rel="stylesheet" href="css/styles.css?v8">
 
         <title>Автоматизированная система управления рисками</title>
     </head>
     <body>
         <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light justify-content-between">
-            <div class="navbar-nav">
-                <a class="nav-item nav-link active" href="#page1">Главная</a>
-                <a class="nav-item nav-link active" href="#page2">Что вам нужно</a>
-                <a class="nav-item nav-link active" href="#page3">Откуда информация</a>
-                <a class="nav-item nav-link active" href="#page6">Состав системы</a>
-                <a class="nav-item nav-link active" href="#page8">Что получите</a>
-                <a class="nav-item nav-link active" href="#contacts">Контакты</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <div class="navbar-nav">
+                    <a class="nav-item nav-link active" href="#page1">Главная</a>
+                    <a class="nav-item nav-link active" href="#page2">Что вам нужно</a>
+                    <a class="nav-item nav-link active" href="#page3">Откуда информация</a>
+                    <a class="nav-item nav-link active" href="#page6">Состав системы</a>
+                    <a class="nav-item nav-link active" href="#page8">Что получите</a>
+                    <!--<a class="nav-item nav-link active" href="#contacts">Контакты</a>-->
+                </div>
             </div>
             <a class="btn btn-sm btn-outline-secondary active" href="mailto:netriskov@gmail.com" role="button">Оставить заявку</a>
         </nav>
@@ -236,16 +241,19 @@
         <footer class="bg-light">
             <div id="contacts" class="container">
                 <div class="row justify-content-between">
-                    <div class="col-4">©&nbsp;2018&nbsp;<a href="http://riskovnet.com">riskovnet.com</a></div>
+                    <div class="col-4">©&nbsp;2018 <a href="http://riskovnet.com">riskovnet.com</a></div>
                     <div class="col-4">
                         <a class="btn btn-secondary btn-lg active" href="mailto:netriskov@gmail.com" role="button">Оставить заявку</a>
                     </div>
                     <div class="col-4">
-                        <p>e-mail:&nbsp;<a href="mailto:netriskov@gmail.com">netriskov@gmail.com</a></p>
-                        <p>тел.:&nbsp;8-906-145-59-18</p>
+                        <p>e-mail: <a href="mailto:netriskov@gmail.com">netriskov@gmail.com</a></p>
+                        <p>тел.: 8-906-145-59-18</p>
                     </div>
                 </div>
             </div>
         </footer>
+
+        <script src="js/jquery-3.3.1.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
     </body>
 </html>
