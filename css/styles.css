@@ -307,11 +307,6 @@ ul {
         bottom: 70px;
     }
 
-    .sidebar .btn {
-        width: auto;
-        white-space: nowrap;
-    }
-
     .banner-man {
         display: block;
     }
@@ -330,4 +325,8 @@ ul {
 }
 
 @media (min-width: 1200px) {
+    .sidebar .btn {
+        width: auto;
+        white-space: nowrap;
+    }
 }
