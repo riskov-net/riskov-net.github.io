@@ -55,12 +55,12 @@ ul li {
 
 .sidebar.left {
     left: -150px;
-    bottom: 30px;
+    bottom: 50px;
 }
 
 .sidebar.right {
     right: 0;
-    bottom: 30px;
+    bottom: 50px;
     display: none;
 }
 
@@ -300,11 +300,11 @@ ul {
     }
 
     .sidebar.left {
-        bottom: 80px;
+        bottom: 100px;
     }
 
     .sidebar.right {
-        bottom: 70px;
+        bottom: 90px;
     }
 
     .banner-man {
